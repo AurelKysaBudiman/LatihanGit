@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Latihan 1: Struktur Layout Responsif -->
+    <div class="container">
+        <!-- Header -->
+        <header class="row">
+            <div class="col-12 bg-primary text-white text-center py-3">
+                <h1>Header</h1>
+            </div>
+        </header>
+        
+        <!-- Navigasi -->
+        <nav class="row">
+            <div class="col-12 col-md-4 bg-light text-center py-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content and Sidebar -->
+        <main class="row">
+            <div class="col-md-8 bg-light text-dark py-3">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl malesuada egestas.</p>
+            </div>
+            <aside class="col-md-4 bg-secondary text-white text-center py-3">
+                <h2>Sidebar</h2>
+                <p>Additional content or links can go here.</p>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer class="row">
+            <div class="col-12 bg-dark text-white text-center py-3">
+                <p>&copy; 2024 Your Website</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Latihan 2: Navbar Responsif -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Latihan 3: Menggunakan Breakpoints dan Media Queries -->
+    <style>
+        @media (max-width: 768px) {
+            aside {
+                display: none;
+            }
+            body {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+    <!-- Latihan 4: Membuat Card Responsif -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latihan 5: Footer Responsif -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Contact Info</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +123456789</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Follow Us</h5>
+                    <p>Social media links here</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
