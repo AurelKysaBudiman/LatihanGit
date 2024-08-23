@@ -1,0 +1,1 @@
+Ini adalah proyek Latihan dari bootcamp sanbercode x bandung AI camp.
