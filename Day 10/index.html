@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website Structure</title>
+    <link rel="stylesheet" href="/styles2.css">
+    <script defer src="script2.js"></script>
+    <!-- Tambahkan CSS di sini -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nama Website</h1>
+        <p>Tagline atau Deskripsi Singkat</p>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-white text-2xl font-bold">Website</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="/" class="text-white hover:text-gray-300">Home</a>
+                <a href="/about.html" class="text-white hover:text-gray-300">About</a>
+                <a href="/contact.html" class="text-white hover:text-gray-300">Contact</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden fixed inset-0 bg-blue-600 bg-opacity-75 flex flex-col items-center justify-center">
+            <a href="/" class="text-white text-xl mb-4">Home</a>
+            <a href="/about.html" class="text-white text-xl mb-4">About</a>
+            <a href="/contact.html" class="text-white text-xl">Contact</a>
+        </div>
+    </nav>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Section Utama -->
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Website</h2>
+            <p>Konten utama berada di sini.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Informasi tentang perusahaan atau organisasi.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Detail tentang layanan yang ditawarkan.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Informasi kontak atau form untuk diisi.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nama Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

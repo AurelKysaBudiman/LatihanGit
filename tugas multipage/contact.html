@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Technesia</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <nav class="bg-purple-900 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-yellow-400 font-bold text-lg">TECHNESIA</div>
+      <ul class="flex space-x-6">
+        <li><a href="about.html" class="hover:text-yellow-400">ABOUT</a></li>
+        <li><a href="contact.html" class="text-yellow-400">CONTACT</a></li>
+        <li><a href="forum.html" class="hover:text-yellow-400">FORUM</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto mt-10">
+    <h1 class="text-center text-yellow-400 text-3xl font-bold mb-8">KALAU ADA MASALAH, BISA KABARI KAMI YA!</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+      <!-- Form Keluhan -->
+      <div class="bg-purple-800 p-6 rounded-lg shadow-lg">
+        <form action="#" method="POST">
+          <textarea class="w-full p-4 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    placeholder="Silakan masukkan keluhan Anda..." rows="5"></textarea>
+          <button type="submit" class="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded-lg hover:bg-yellow-500">
+            Kirim Keluhan
+          </button>
+        </form>
+      </div>
+
+      <!-- Info Kontak -->
+      <div class="bg-purple-800 p-6 rounded-lg shadow-lg text-center">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">Bisa Hubungi Kami Langsung di:</h2>
+        <div class="text-left space-y-4">
+          <div class="flex items-center">
+            <span class="mr-4 text-xl">✉️</span>
+            <a href="mailto:tech.nesia@gmail.com" class="text-white hover:text-yellow-400">tech.nesia@gmail.com</a>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-4 text-xl">📞</span>
+            <a href="tel:+6285672121312" class="text-white hover:text-yellow-400">+62 856-7212-1312</a>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-4 text-xl">💬</span>
+            <a href="https://wa.me/6285672121312" class="text-white hover:text-yellow-400">+62 856-7212-1312 (WhatsApp)</a>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-4 text-xl">📱</span>
+            <a href="https://www.facebook.com/technesia.id" target="_blank" class="text-white hover:text-yellow-400">technesia.id (Facebook)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-900 p-6 mt-10">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-300">Copyright 2024 TECHNESIA. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
