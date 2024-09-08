@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9; /* Warna latar belakang yang lebih cerah dan modern */
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px; /* Memperluas area header */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #1a1a1a; /* Warna teks yang lebih gelap untuk kontras yang lebih baik */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Membatasi lebar form */
+    margin: auto;
+}
+
+label, input, textarea, button {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical; /* Memungkinkan pengguna untuk mengubah ukuran textarea secara vertikal */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya untuk tombol + REGISTER */
+.btn-register {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.btn-register:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Gaya untuk tabel daftar user dan tabel pesan */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden; /* Menghilangkan sudut tajam pada tabel */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bayangan tabel */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk elemen status */
+.message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.message.success {
+    background-color: #28a745;
+}
+
+.message.error {
+    background-color: #dc3545;
+}
